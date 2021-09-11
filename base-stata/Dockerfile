@@ -26,6 +26,8 @@ RUN apt-get update && \
     make install && \
     ldconfig
 
-ENV PATH="/usr/local/stata:$PATH"    
+COPY stata.lic /user/local/stata/stata.lic
+
+ENV PATH="/usr/local/stata:$PATH"
 RUN mkdir -p /home/stata
 WORKDIR /home/stata
