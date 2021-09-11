@@ -1,2 +1,3 @@
 util/
 .ipynb_checkpoints/
+*.tar.gz
